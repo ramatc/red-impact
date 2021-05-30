@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    height: 100vh;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.main-header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(18, 17, 17);
+}
+.main-navbar{
+    display: flex;
+    justify-content: center;
+}
+.search-form{
+    display: flex;
+    align-self: center;
+    width: 50%;
+    justify-content: center;
+}
+.campo-busqueda{
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    font-family: "Roboto";
+    padding:8px;
+    width: 85%;
+    border-bottom: solid 1px #222021 ;
+}
+.header-top-bar{
+    width: 40%;
+    padding: 30px;
+}
+.header-bottom-bar{
+    padding:10px;
+    width: 100%;
+    background: linear-gradient(178.6deg, rgb(32, 32, 33) 11.8%, rgb(66, 68, 71) 83.8%);
+    border: 3px solid black;
+    border-left: 2px solid rgb(32, 32, 33);
+    border-right: 2px solid rgb(32, 32, 33);
+    /* display: none; */
+}
+.header-bottom-bar ul{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.linknav{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.linknav:hover{
+    color: #D6D6D6;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images{
+    flex-wrap: wrap;
+    box-shadow: -1px 0px 20px 8px black ;
+    width: 50%;
+    background-color: rgb(18, 17, 17);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.padding-button{
+    padding: 7px;
+}
+.padding-img{
+    padding: 2px 7px ;
+}
+.main-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    color: white;
+}
+.footer-bottom{
+    background-color: rgb(18, 17, 17);
+    width: 50%;
+    text-align: center;
+    box-shadow: -1px 0px 20px 8px black ;
+    justify-content: center;
+    padding: 40px;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.icon:hover{
+    color: #D6D6D6;
+}
+.sector-banner {
+    padding: 1px;
+    overflow: hidden;
+}
+.sector-banner img {
+    transition: transform .5s, filter 0.5s ease-in-out;
+    filter: grayscale(0);
+}
+.sector-banner:hover img {
+    filter: grayscale(100%);
+    transform: scale(1.07);
+}
+.none{
+    display: none;
+}
+@media(min-width: 478px){
+
+}
+@media (min-width:768px){
+    .none{
+        display:block;
+    }
+    .search-form{
+        width:50%;
+        order: 1;
+    }
+}
+@media (min-width:1200px){
+
+}
