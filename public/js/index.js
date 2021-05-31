@@ -1,41 +1,75 @@
 window.onload = function(){
-    //JavaScript del Index
-    let container = document.querySelector('.container');
+    var slideIndex = 0;
+    showSlides();
     
-    
-    // let nombre = prompt('Ingrese su nombre');
-    // console.log(nombre);
-    // if(nombre !=''){
-    //     subtitulo.innerHTML += nombre;
-    // }else{
-    //     subtitulo.innerHTML += 'INVITADO';
-    // }
-        
-    // subtitulo.style.textTransform = 'uppercase';
-    // let confirmar = confirm('Desea colocar un fondo de pantalla ')
-    // if(confirmar){
-    //     fondo.classList.add('fondo');
-    //     enlace.style.color = '#E51B3E';
-    // }
-    // console.log(destacado);
-    // for(let i = 0 ; i < destacado.length; i++){
-    //     if(i % 2 == 0){
-    //         destacado[i].classList.add('destacadoPar');
-    //     }else{
-    //         destacado[i].classList.add('destacadoImpar');
-    //     }
-    // }
-    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+    }
+    // const prevBtn = document.querySelector(".prev");
+    // const nextBtn = document.querySelector(".next");
+    // const dot1 = document.querySelector("#dot1");
+    // const dot2 = document.querySelector("#dot2");
+    // const dot3 = document.querySelector("#dot3");
 
-    // container.style.display = 'block';
+    // var slideIndex = 1;
+    // showSlides(slideIndex);
+
+    // function plusSlides(n) {
+    //   showSlides(slideIndex += n);
+    // }
     
-    // let logo = document.querySelector(".logoDH");
-    // logo.addEventListener("click", function(){
-    //     document.querySelector("#menu").classList.toggle("mostrar")
+    // function currentSlide(n) {
+    //   showSlides(slideIndex = n);
+    // }
+
+    // prevBtn.addEventListener("click",function(){
+    //     plusSlides(-1)
     // })
 
-    // let menu = document.getElementById("menu")
-    // menu.addEventListener("mouseleave", function(){
-    //     this.classList.remove("mostrar")
+    // nextBtn.addEventListener("click",function(){
+    //     plusSlides(1)
     // })
+
+    // dot1.addEventListener("click",function(){
+    //     currentSlide(1)
+    // })
+
+    // dot2.addEventListener("click",function(){
+    //     currentSlide(2)
+    // })
+
+    // dot3.addEventListener("click",function(){
+    //     currentSlide(3)
+    // })
+    
+    // function showSlides(n) {
+    //   var i;
+    //   var slides = document.getElementsByClassName("mySlides");
+    //   var dots = document.getElementsByClassName("dot");
+    //   if (n > slides.length) {slideIndex = 1}
+    //   if (n < 1) {slideIndex = slides.length}
+    //   for (i = 0; i < slides.length; i++) {
+    //       slides[i].style.display = "none";
+    //   }
+    //   for (i = 0; i < dots.length; i++) {
+    //       dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+    //   slides[slideIndex-1].style.display = "block";
+    //   dots[slideIndex-1].className += " active";
+    
+    // } 
+
 }

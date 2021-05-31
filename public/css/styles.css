@@ -11,7 +11,103 @@ html,body {
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    background-color: lightgrey;
 }
+
+/* Carousel */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+/* .slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} */
+
+/* Header */
 .main-header{
     display: flex;
     justify-content: center;
@@ -27,21 +123,25 @@ body{
     width: 50%;
     justify-content: center;
 }
+.search-button{
+    font-size: 12px;
+    border: none;
+    background-color: white;
+    width:10%;
+}
 .campo-busqueda{
     text-align: center;
     font-size: 12px;
     border: none;
-    font-family: "Roboto";
     padding:8px;
-    width: 85%;
-    border-bottom: solid 1px #222021 ;
+    width: 94%;
 }
 .header-top-bar{
     width: 40%;
     padding: 30px;
 }
 .header-bottom-bar{
-    padding:10px;
+    padding:10px 75px;
     width: 100%;
     background: linear-gradient(178.6deg, rgb(32, 32, 33) 11.8%, rgb(66, 68, 71) 83.8%);
     border: 3px solid black;
@@ -58,53 +158,69 @@ body{
 .linknav{
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
 }
 .linknav:hover{
     color: #D6D6D6;
 }
-.home{
+
+/* Main */
+
+.description{
+    font-size: 18px;
+    width: 100%;
+}
+.equipment{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.equipment article{
+    background-color: #fff;    
+    margin: 7px 0px;
+}
+
+.equipment article img{
+    width: 100%;
+}
+.equipment h3{
+    margin: 20px 0px;
+    font-size: 25px;
+}
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+p.font-size{
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+}
+.banner{
+    width: 100%;
+}
+.category-title{
+    background-color: lightgray;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: normal;
+    
+}
+
+/* 
+.main-banner{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.images{
-    flex-wrap: wrap;
-    box-shadow: -1px 0px 20px 8px black ;
-    width: 50%;
-    background-color: rgb(18, 17, 17);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-.padding-button{
-    padding: 7px;
-}
-.padding-img{
-    padding: 2px 7px ;
-}
-.main-footer{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    color: white;
-}
-.footer-bottom{
-    background-color: rgb(18, 17, 17);
-    width: 50%;
-    text-align: center;
-    box-shadow: -1px 0px 20px 8px black ;
-    justify-content: center;
-    padding: 40px;
-}
-.icon{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-.icon:hover{
-    color: #D6D6D6;
+.banner{
+    width: 100%;
+    max-height: 700px;
+    padding: 30px 6%;
 }
 .sector-banner {
     padding: 1px;
@@ -118,11 +234,69 @@ body{
     filter: grayscale(100%);
     transform: scale(1.07);
 }
-.none{
-    display: none;
-}
-@media(min-width: 478px){
 
+
+/* Footer */
+.main-footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer-top-bar{
+    background-color: rgb(18, 17, 17);
+    width: 100%;
+    padding: 30px;
+}
+.footer-mid-bar{
+    background-color: rgb(18, 17, 17);
+    width: 100%;
+    text-align: center;
+}
+.footer-bottom-bar{
+    background-color: rgb(18, 17, 17);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.arg-flag{
+    width: 50px;
+}
+p.footer-top-bar{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    font-size: 15px;
+}
+.footer-top-bar ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+.footer-top-bar li{
+   padding: 0px 10px;
+}        
+.icon{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.icon:hover{
+    color: #D6D6D6;
+}
+.linkfooter{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.linkfooter:hover{
+    color: #D6D6D6;
+}
+
+/* Media */
+@media(min-width: 478px){
+    .equipment article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
 @media (min-width:768px){
     .none{
@@ -132,7 +306,30 @@ body{
         width:50%;
         order: 1;
     }
+    .categories{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .equipment article{
+        width: 45%;
+    }
+    .equipment article{
+        box-shadow: none;
+    }
+    .equipment article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .equipment article i{
+        transition: transform 1000ms;
+    }
+    .equipment article:hover i{
+        transform: rotateZ(-90deg);
+    }
+   
 }
 @media (min-width:1200px){
-
+    .equipment article{
+        width: 33%;
+    }
 }
