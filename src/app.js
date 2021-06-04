@@ -22,7 +22,7 @@ app.listen(3000, ()=>{
 });
 
 // ************ Route System require and use() ************
-const rutasMain= require("./routes/main");
+const rutasMain = require("./routes/main");
 app.use("/" , rutasMain);
 
 // ************ DON'T TOUCH FROM HERE ************

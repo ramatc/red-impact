@@ -11,46 +11,12 @@ html,body {
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: lightgrey;
+    background-color: white;
 }
 
 /* Carousel */
 
 .slideshow-container {
-    width: 100%;
-    position: relative;
-    margin: auto;
-}
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active {
-    background-color: #717171;
-}
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-@media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-}
-/* .slideshow-container {
   width: 100%;
   position: relative;
   margin: auto;
@@ -105,7 +71,7 @@ body{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-} */
+} 
 
 /* Header */
 .main-header{
@@ -174,12 +140,10 @@ body{
     width: 70%;
     margin: 0 auto;
 }
-
 .equipment article{
     background-color: #fff;    
     margin: 7px 0px;
 }
-
 .equipment article img{
     width: 100%;
 }
@@ -189,10 +153,8 @@ body{
 }
 article div.main-article{
     width: 100%;
-    border-top: 1px solid #ebebeb;
     padding: 15px;
     display: flex;
-    position: relative;
     flex-wrap: wrap;
 }
 p.font-size{
@@ -204,23 +166,11 @@ p.font-size{
     width: 100%;
 }
 .category-title{
-    background-color: lightgray;
+    background-color: white;
     padding-bottom: 15px;
     font-size: 25px;
     font-weight: normal;
     
-}
-
-/* 
-.main-banner{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.banner{
-    width: 100%;
-    max-height: 700px;
-    padding: 30px 6%;
 }
 .sector-banner {
     padding: 1px;
@@ -234,7 +184,6 @@ p.font-size{
     filter: grayscale(100%);
     transform: scale(1.07);
 }
-
 
 /* Footer */
 .main-footer{
@@ -292,9 +241,38 @@ p.footer-top-bar{
     color: #D6D6D6;
 }
 
-/* Media */
+/* Nosotros */
+.link-main{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.link-main:hover{
+    color: red;
+}
+.text-nosotros{
+    font-size: 24px;
+}
+.margin-nosotros1{
+  margin: 20px 30px 0px 0px;
+}
+.margin-nosotros2{
+    margin: 0px 30px 0px 0px;
+}
+/* Productos */
+
+/* Certificaciones */
+
+/* Footer */
+
+/* Contacto */
+
+/* Como llegar */
+
+/* Medias */
 @media(min-width: 478px){
-    .equipment article{
+    .shadow{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
@@ -314,22 +292,22 @@ p.footer-top-bar{
     .equipment article{
         width: 45%;
     }
-    .equipment article{
+    .shadow{
         box-shadow: none;
     }
-    .equipment article:hover{
+    .shadow:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .equipment article i{
-        transition: transform 1000ms;
-    }
-    .equipment article:hover i{
-        transform: rotateZ(-90deg);
-    }
-   
 }
+
 @media (min-width:1200px){
     .equipment article{
-        width: 33%;
+        width: 30%;
+    }
+    .nosotros article{
+        width: 50%;
+    }
+    footer{
+        padding-top: 50px;
     }
 }
