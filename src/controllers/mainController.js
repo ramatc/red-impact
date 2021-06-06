@@ -22,19 +22,19 @@ const mainController = {
         
     },
 	nosotros: (req, res) => {
-		res.render("nosotros", {titulo: "NOSOTROS"});
+		res.render("nosotros", {titulo: "RED IMPACT - NOSOTROS"});
 	},
 	productos: (req, res) => {
-		res.render("productos", {titulo: "PRODUCTOS"});
+		res.render("productos", {titulo: "RED IMPACT - PRODUCTOS"});
 	},
 	certificaciones: (req, res) => {
-		res.render("certificaciones", {titulo: "CERTIFICACIONES"});
+		res.render("certificaciones", {titulo: "RED IMPACT - CERTIFICACIONES"});
 	},
 	contacto: (req, res) => {
-		res.render("contacto", {titulo: "CONTACTO"});
+		res.render("contacto", {titulo: "RED IMPACT - CONTACTO"});
 	},
 	comoLlegar: (req, res) => {
-		res.render("como-llegar", {titulo: "COMO LLEGAR"});
+		res.render("como-llegar", {titulo: "RED IMPACT - COMO LLEGAR"});
 	}
 
 }  
