@@ -3,21 +3,44 @@
         <div class="header-top-bar">
             <a href="/"><img src="/images/logo-redimpact.png" alt="Logo Red Impact" class="logo"></a>
         </div>
-        <form action="/search" method="GET" class="search-form">
-            <input type="text" name="search" placeholder="¿Qué estás buscando?" class="campo-busqueda">
-            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-        </form>
+
+        <div class="burger-search">
+            <div class="contenedor-menu" id="contenedor-menu">
+                <i class="fas fa-bars hamburguer-button"></i>
+            </div>
+            <div class="menu-open" id="menu-open">
+                <ul class="open-list">
+                    <li><span class="menu-close" id="menu-close">x</span></li>
+                    <li><a href="/productos" id="link-desplegable">PRODUCTOS</a></li>
+                    <li><a href="/nosotros" id="link-desplegable">NOSOTROS</a></li>
+                    <li><a href="http://www.redimpact.com.ar/catalogo.pdf" target="_blank" rel="noreferrer"
+                            id="link-desplegable">CATÁLOGO</a></li>
+                    <li><a href="/certificaciones" id="link-desplegable">CERTIFICACIONES</a></li>
+                    <li><a href="/contacto" id="link-desplegable">CONTACTO</a></li>
+                    <li><a href="/como-llegar" id="link-desplegable">¿CÓMO LLEGAR?</a></li>
+                    <li><a href="/"><img src="images/logo-redimpact.png" alt="Logo de Red Impact"></a></li>
+                </ul>
+
+            </div>
+
+            <form action="/search" method="GET" class="search-form">
+                <input type="text" name="search" placeholder="¿Qué estás buscando?" class="campo-busqueda">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
     </section>
 
     <section class="main-navbar">
-        <nav class="header-bottom-bar none">
+        <nav class="header-bottom-bar">
             <ul>
                 <li><a href="/productos" class="linknav">PRODUCTOS</a></li>
                 <li><a href="/nosotros" class="linknav">NOSOTROS</a></li>
-                <li><a href="http://www.redimpact.com.ar/catalogo.pdf" class="linknav" target="_blank">CATÁLOGO</a></li>
+                <li><a href="http://www.redimpact.com.ar/catalogo.pdf" class="linknav" target="_blank"
+                        rel="noreferrer">CATÁLOGO</a></li>
                 <li><a href="/certificaciones" class="linknav">CERTIFICACIONES</a></li>
                 <li><a href="/contacto" class="linknav">CONTACTO</a></li>
-                <li><a href="/como-llegar" class="linknav">COMO LLEGAR</a></li>
+                <li><a href="/como-llegar" class="linknav">¿CÓMO LLEGAR?</a></li>
             </ul>
         </nav>
 

@@ -3,130 +3,108 @@
 
 <%- include("./partials/head")%>
 
-<body>
-    <%- include("./partials/header")%>
-
-    <main>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="/images/banner-militar.png" alt="Banner Militar" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <a href="http://www.redimpact.com.ar/catalogo.pdf" target="_blank">
-                    <img src="/images/banner-catalogo.png" alt="Banner Catalogo" style="width:100%">
-                </a>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="/images/banner-policial.png" alt="Banner Policial" style="width:100%">
-            </div>
-
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
-        </div>
-
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" id="dot1"></span>
-            <span class="dot" id="dot2"></span>
-            <span class="dot" id="dot3"></span>
-        </div>
-
-        <section class="equipment">
-            <h3>Ver por equipamiento:</h3>
-            <div class="categories">
-                <article>
-                    <h4 class="category-title">Militar</h4>
-                    <div class="shadow">
-                        <img src="/images/category-4.jpg" alt="Imagen Militar">
-                        <div class="main-article">
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                                sint,
-                                adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum
-                                labore ex
-                                id numquam impedit quas quia suscipit.</p>
+    <body>
+        <%- include("./partials/header")%>
+            <main>
+                <div class="carousel">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="/images/banner-militar.png" alt="Banner Militar" style="width:100%">
                         </div>
-                    </div>
-                </article>
-                <article>
-                    <h4 class="category-title">Policial</h4>
-                    <div class="shadow">
-                        <img src="/images/category-5.jpg" alt="Imagen Policial">
-                        <div class="main-article">
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                                sint,
-                                adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum
-                                labore ex
-                                id numquam impedit quas quia suscipit.</p>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <h4 class="category-title">Prefectura</h4>
-                    <div class="shadow">
-                        <img src="/images/category-6.jpg" alt="Imagen Prefectura">
-                        <div class="main-article">
-                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-                                ratione
-                                atque
-                                eum vitae, dolores laudantium beatae a non possimus nihil distinctio vel vero officia ad
-                                quisquam minima repellat, earum accusamus.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
 
-        <section class="equipment">
-            <h3>Ver por categoria de producto:</h3>
-            <div class="categories">
-                <article>
-                    <h4 class="category-title">Accesorios</h4>
-                    <div class="shadow">
-                        <img src="/images/category-1.jpg" alt="Categoria de Accesorios">
-                        <div class="main-article">
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad
-                                error
-                                incidunt debitis, culpa, odit sit quo exercitationem autem illum dolor mollitia,
-                                accusantium
-                                quasi voluptatibus fugit atque voluptates sapiente ex!</p>
+                        <div class="mySlides fade">
+                            <a href="http://www.redimpact.com.ar/catalogo.pdf" target="_blank" rel="noreferrer">
+                                <img src="/images/banner-catalogo.png" alt="Banner Catalogo" style="width:100%">
+                            </a>
                         </div>
-                    </div>
-                </article>
-                <article>
-                    <h4 class="category-title">Equipos de visión</h4>
-                    <div class="shadow">
-                        <img src="/images/category-2.jpg" alt="Categoria de Equipos de visión">
-                        <div class="main-article">
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                                sint,
-                                adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum
-                                labore ex
-                                id numquam impedit quas quia suscipit.</p>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <h4 class="category-title">Mascaras de gas</h4>
-                    <div class="shadow">
-                        <img src="/images/category-3.jpg" alt="Categoria de Mascaras de gas">
-                        <div class="main-article">
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                                sint,
-                                adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum
-                                labore ex
-                                id numquam impedit quas quia suscipit.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
 
-    <%- include("./partials/footer")%>
-    <script src="/js/index.js"></script>
-</body>
+                        <div class="mySlides fade">
+                            <img src="/images/banner-policial.png" alt="Banner Policial" style="width:100%">
+                        </div>
+
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+
+                    <br class="none">
+
+                    <div style="text-align:center">
+                        <span class="dot" id="dot1"></span>
+                        <span class="dot" id="dot2"></span>
+                        <span class="dot" id="dot3"></span>
+                    </div>
+                </div>
+
+                <section class="equipment">
+                    <h3>Ver por equipamiento:</h3>
+                    <div class="categories">
+                        <article>
+                            <h4 class="category-title">Militar</h4>
+                            <div class="shadow">
+                                <img src="/images/category-4.jpg" alt="Imagen Militar">
+                                <div class="main-article">
+                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint, adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum labore ex id numquam impedit quas quia suscipit.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <h4 class="category-title">Policial</h4>
+                            <div class="shadow">
+                                <img src="/images/category-5.jpg" alt="Imagen Policial">
+                                <div class="main-article">
+                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint, adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum labore ex id numquam impedit quas quia suscipit.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <h4 class="category-title">Prefectura</h4>
+                            <div class="shadow">
+                                <img src="/images/category-6.jpg" alt="Imagen Prefectura">
+                                <div class="main-article">
+                                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ratione atque eum vitae, dolores laudantium beatae a non possimus nihil distinctio vel vero officia ad quisquam minima repellat, earum accusamus.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="equipment">
+                    <h3>Ver por categoria de producto:</h3>
+                    <div class="categories">
+                        <article>
+                            <h4 class="category-title">Accesorios</h4>
+                            <div class="shadow">
+                                <img src="/images/category-1.jpg" alt="Categoria de Accesorios">
+                                <div class="main-article">
+                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad error incidunt debitis, culpa, odit sit quo exercitationem autem illum dolor mollitia, accusantium quasi voluptatibus fugit atque voluptates sapiente
+                                        ex!</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <h4 class="category-title">Equipos de visión</h4>
+                            <div class="shadow">
+                                <img src="/images/category-2.jpg" alt="Categoria de Equipos de visión">
+                                <div class="main-article">
+                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint, adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum labore ex id numquam impedit quas quia suscipit.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <h4 class="category-title">Mascaras de gas</h4>
+                            <div class="shadow">
+                                <img src="/images/category-3.jpg" alt="Categoria de Mascaras de gas">
+                                <div class="main-article">
+                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint, adipisci molestiae nesciunt a sit laudantium quidem voluptatum ad ratione at harum labore ex id numquam impedit quas quia suscipit.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <%- include("./partials/footer")%>
+                <script src="/js/index.js"></script>
+    </body>
 
 </html>
