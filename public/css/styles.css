@@ -49,17 +49,15 @@ body {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
+.dots{
+    text-align:center;
+    padding-top: 5px;
+}
 .dot {
     cursor: pointer;
     height: 13px;
     width: 13px;
-    /* height: 15px;
-  width: 15px; */
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -97,20 +95,15 @@ body {
     }
 }
 
-
 /* Header */
 
 .main-header {
-    /* display: flex;
-    justify-content: center;*/
     background-color: rgb(18, 17, 17);
     text-align: center;
 }
 
 .main-navbar {
     display: none;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .logo {
@@ -134,7 +127,6 @@ body {
     display: flex;
     align-self: center;
     width: 50%;
-    /* justify-content: center; */
     text-align: center;
     padding-bottom: 25px;
 }
@@ -158,8 +150,6 @@ body {
 .header-top-bar {
     width: 100%;
     padding: 12px;
-    /* padding: 20px; */
-    /* width: 28%;*/
 }
 
 .header-bottom-bar {
@@ -169,7 +159,6 @@ body {
     border: 3px solid black;
     border-left: 2px solid rgb(32, 32, 33);
     border-right: 2px solid rgb(32, 32, 33);
-    /* display: none; */
 }
 
 .header-bottom-bar ul {
@@ -182,13 +171,8 @@ body {
 .linknav {
     color: #ffffff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
 }
-
-.linknav:hover {
-    color: #D6D6D6;
-}
-
 
 /* Main */
 
@@ -286,6 +270,7 @@ body {
 
 .equipment article img {
     width: 100%;
+    max-height: 350px;
 }
 
 .equipment h3 {
@@ -338,7 +323,6 @@ p.font-size {
     display: none;
 }
 
-
 /* Footer */
 
 .main-footer {
@@ -346,12 +330,8 @@ p.font-size {
     justify-content: center;*/
     background-color: rgb(18, 17, 17);
     text-align: center;
-    margin-top: 30px;
-    padding-top: 35px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 35px 15px 0px;
+    margin: 40px auto 0px;    
 }
 
 .copyrightText {
@@ -387,10 +367,6 @@ p.font-size {
     padding: 3px 11px;
 }
 
-.linkfooter:hover {
-    color: #D6D6D6;
-}
-
 .footer-hr {
     display: block;
     border: 0;
@@ -420,29 +396,29 @@ p.font-size {
 .link-main {
     text-decoration: none;
     color: #000000;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
 }
 
-.link-main:hover {
-    color: #FF0000;
-}
-
 .text-nosotros {
-    font-size: 21px;
+    font-size: 16px;
+    text-align: justify;
 }
 
 .margin-nosotros1 {
-    margin: 60px 30px 0px 0px;
+    margin-top: 20px;
+    /* margin: 60px 30px 0px 0px; */
 }
 
 .margin-nosotros2 {
-    margin: 0px 30px 0px 0px;
+    margin-bottom: 20px;
+    /* margin: 0px 30px 0px 0px; */
 }
 
 .main-section {
-    width: 70%;
+    width: 80%;
+    /* width: 70%; */
     margin: 0 auto;
 }
 
@@ -455,16 +431,23 @@ p.font-size {
 }
 
 .main-section h3 {
-    margin-top: 35px;
+    /* margin-top: 35px; */
+    margin-top: 20px;
     font-size: 25px;
 }
 
-.normal {
+.follow-ig {
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.normal{
     font-weight: normal;
 }
 
 .banner-ig {
-    padding: 40px;
+    padding: 30px 20px;
     margin-top: 50px;
     text-align: center;
     font-weight: bold;
@@ -479,7 +462,8 @@ p.font-size {
 }
 
 .text-ig {
-    font-size: 27.5px;
+    /* font-size: 27.5px; */
+    font-size: 22px;
     color: #000000;
     text-decoration: none;
     transition: color 0.6s;
@@ -492,7 +476,7 @@ p.font-size {
 .icon-ig {
     color: #000000;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 47px;
     padding-right: 8px;
 }
 
@@ -512,7 +496,8 @@ p.font-size {
     background-color: #f5f5f5;
     border-bottom: 3px solid #808080;
     border-radius: 5px;
-    margin: 0px 30px 20px 0px;
+    margin-bottom: 30px;
+    /* margin: 0px 30px 20px 0px; */
     padding: 10px;
     text-align: center;
 }
@@ -526,6 +511,41 @@ p.font-size {
     list-style: none;
 }
 
+.container-zoom{
+    position: fixed;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 95%);
+    width:100%;
+    height: 100%;
+    z-index:30;
+    top:0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items:center
+}
+
+.close-zoom{
+    position:absolute;
+    color: white;
+    font-size: 30px;
+    top: 2%;
+    right: 5%;
+    cursor:pointer;
+}
+
+.image-zoom{
+    margin-top: auto;
+    margin: 5%;
+    width: 80%;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
 
 /* Contacto */
 
@@ -534,7 +554,8 @@ p.font-size {
     border-bottom: 3px solid #000000;
     border-right: 3px solid #d3d3d3;
     height: 115px;
-    margin: 0px 10px 15px 20px;
+    /* margin: 0px 10px 15px 20px; */
+    margin: 10px 0px;
     padding: 10px;
 }
 
@@ -548,15 +569,9 @@ p.font-size {
     font-weight: 600;
 }
 
-.section-contacto li a:hover {
-    transition: color 0.6s;
-    color: #808080;
+.contacto{
+    padding-top: 20px;
 }
-
-.contacto {
-    padding-top: 25px;
-}
-
 
 /* Como llegar */
 
@@ -575,12 +590,13 @@ p.font-size {
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 500;
 }
 
 .flex-como-llegar li {
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
+    padding: 3px 5px;
 }
 
 .flex-como-llegar li a {
@@ -598,14 +614,39 @@ p.font-size {
 }
 
 .text-como-llegar {
-    font-size: 28px;
+    font-size: 17px;
     font-weight: 600;
+    margin-bottom: 7px;
 }
 
 
 /* Medias 576px, 768px, 992px y 1200px */
 
-@media(min-width: 478px) {}
+@media(min-width: 478px) {
+    .equipment {
+        width:68%;
+    }
+    
+}
+
+@media(min-width: 576px) {
+    .equipment {
+        width:58%;
+    }
+    .text-nosotros {
+        font-size: 17px;
+    }
+    .flex-como-llegar {
+        font-size: 14px;
+    }
+    .text-como-llegar {
+        font-size: 23px;
+    }
+    .equipment article img {
+        max-height: 375px;
+    }
+
+}
 
 @media (min-width:768px) {
     .search-form {
@@ -620,8 +661,71 @@ p.font-size {
     .equipment article {
         width: 45%;
     }
+    .none {
+        display: block;
+    }
+    .contenedor-menu, 
+    .menu-open {
+        display: none;
+    }
+    .equipment,
+    .main-section {
+        width:70%;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .dots{
+        padding-top: 0px;
+    }
+    .dot{
+        height: 15px;
+        width: 15px; 
+    }
+    .link-main {
+        font-size: 20px;
+    }
+    .text-nosotros {
+        font-size: 21px;
+    }
+    .flex-como-llegar {
+        font-size: 15px;
+    }
+    .text-como-llegar {
+        font-size: 25px;
+    }
+    .equipment article img {
+        max-height: 100%;
+    } 
+    .main-header {
+        display: flex;
+        justify-content: center;
+    }
+    .search-form {
+        justify-content: center;
+    }
+    .header-top-bar {
+        padding: 20px; 
+        width: 28%;
+    }
+}
+
+@media (min-width:1200px) {
+    .equipment article,
     .main-section article {
-        width: 45%;
+        width: 30%;
+    }
+    .nosotros article,
+    .contacto article  {
+        width: 50%;
+    }
+    .como-llegar article {
+        width: 100%;
+    }
+    .section-contacto li a:hover {
+        transition: color 0.6s;
+        color: #808080;
     }
     .shadow {
         box-shadow: none;
@@ -629,31 +733,33 @@ p.font-size {
     .shadow:hover {
         box-shadow: 0px 0px 4px rgb(100, 100, 100);
     }
-    .none {
-        display: block;
+    .link-main {
+        font-size: 20px;
     }
-    .contenedor-menu {
-        display: none;
+    .text-nosotros {
+        font-size: 21px;
     }
-    .menu-open {
-        display: none;
+    .linknav {
+        font-size: 17px;
     }
-}
-
-@media (min-width:1200px) {
-    .equipment article {
-        width: 30%;
+    .linknav:hover {
+        color: #D6D6D6;
     }
-    .main-section article {
-        width: 30%;
+    .margin-nosotros1 {
+        margin: 60px 30px 0px 0px;
     }
-    .nosotros article {
-        width: 50%;
+    .margin-nosotros2 {
+        margin: 0px 30px 0px 0px;
     }
-    .contacto article {
-        width: 50%;
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
     }
-    .como-llegar article {
-        width: 100%;
+    .linkfooter:hover {
+        color: #D6D6D6;
     }
+    .link-main:hover {
+        color: #FF0000;
+    }
+    
 }

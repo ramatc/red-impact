@@ -34,7 +34,7 @@ const mainController = {
 		res.render("contacto", {titulo: "RED IMPACT - CONTACTO"});
 	},
 	comoLlegar: (req, res) => {
-		res.render("como-llegar", {titulo: "RED IMPACT - COMO LLEGAR"});
+		res.render("como-llegar", {titulo: "RED IMPACT - ¿CÓMO LLEGAR?"});
 	}
 
 }  

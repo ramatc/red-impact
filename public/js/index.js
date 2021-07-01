@@ -85,4 +85,19 @@ window.onload = function() {
         }
         setInterval(avanzar, 4000) //Cambia la imagen cada 4 segundos
     }
+
+    //zoom imagen product detail
+    let mainProductImage = document.querySelector("#mainProductImage")
+    let containerZoom = document.querySelector(".container-zoom")
+    let closeZoom = document.querySelector(".close-zoom")
+
+    if(mainProductImage){
+        mainProductImage.addEventListener("click",function(){
+                containerZoom.style.display = "flex"
+            closeZoom.addEventListener("click",function(){
+                containerZoom.style.display = "none"
+            })
+        })
+    }
+
 }
