@@ -104,10 +104,12 @@ body {
 
 .main-navbar {
     display: none;
+    background: linear-gradient(178.6deg, rgb(32, 32, 33) 11.8%, rgb(66, 68, 71) 83.8%);
+    border: 3px solid rgb(32, 32, 33);
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
 }
 
 .hamburguer-button {
@@ -153,18 +155,15 @@ body {
 }
 
 .header-bottom-bar {
-    padding: 10px 75px;
-    width: 100%;
+    padding: 10px 0px;
+    width: 80%;
     background: linear-gradient(178.6deg, rgb(32, 32, 33) 11.8%, rgb(66, 68, 71) 83.8%);
-    border: 3px solid black;
-    border-left: 2px solid rgb(32, 32, 33);
-    border-right: 2px solid rgb(32, 32, 33);
 }
 
 .header-bottom-bar ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
 }
 
@@ -250,11 +249,9 @@ body {
 .description {
     width: 100%;
     font-size: 16px;
-    /* font-size: 18px; */
 }
 
 .equipment {
-    /* width:70%; */
     width: 80%;
     margin: 0 auto;
 }
@@ -276,7 +273,6 @@ body {
 .equipment h3 {
     margin: 20px 0px 0px 0px;
     font-size: 21px;
-    /* font-size: 25px; */
 }
 
 article div.main-article {
@@ -301,7 +297,6 @@ p.font-size {
     padding: 15px 0px;
     font-size: 21px;
     font-weight: normal;
-    /* font-size: 25px; */
 }
 
 .sector-banner {
@@ -326,8 +321,6 @@ p.font-size {
 /* Footer */
 
 .main-footer {
-    /* display: flex;
-    justify-content: center;*/
     background-color: rgb(18, 17, 17);
     text-align: center;
     padding: 35px 15px 0px;
@@ -338,7 +331,6 @@ p.font-size {
     width: 100%;
     background: #272727;
     padding: 8px 50px;
-    /* padding: 8px 100px; */
     text-align: center;
     color: #999;
     font-size: 14px;
@@ -418,7 +410,6 @@ p.font-size {
 
 .main-section {
     width: 80%;
-    /* width: 70%; */
     margin: 0 auto;
 }
 
@@ -643,14 +634,14 @@ p.font-size {
         font-size: 23px;
     }
     .equipment article img {
-        max-height: 375px;
+        max-height: 390px;
     }
 
 }
 
 @media (min-width:768px) {
     .search-form {
-        width: 50%;
+        width: 100%;
         order: 1;
     }
     .categories {
@@ -687,7 +678,7 @@ p.font-size {
         font-size: 20px;
     }
     .text-nosotros {
-        font-size: 21px;
+        font-size: 19px;
     }
     .flex-como-llegar {
         font-size: 15px;
@@ -706,8 +697,27 @@ p.font-size {
         justify-content: center;
     }
     .header-top-bar {
-        padding: 20px; 
-        width: 28%;
+        padding: 10px; 
+        width: 40%;
+        text-align: start;
+    }
+    .burger-search{
+        width: 40%;
+        padding-top: 30px; 
+    }
+    .logo{
+        width: 70px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .main-footer {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 35px;
+    }
+    footer{
+        background-color: rgb(18, 17, 17);
     }
 }
 
@@ -760,6 +770,23 @@ p.font-size {
     }
     .link-main:hover {
         color: #FF0000;
+    }
+    .logo{
+        width: 100px;
+    }
+    .equipment h3,
+    .category-title {
+        font-size: 23px;
+    }
+    .copyrightText {
+        padding: 11px 100px;
+    }
+    .section-contacto {
+        margin: 0px 10px 15px 20px;
+    }
+    .main-footer {
+        justify-content: space-around;
+        width: 80%;
     }
     
 }
