@@ -95,6 +95,51 @@ body {
     }
 }
 
+/* Menu Canvas */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 4px;
+}
+.sidenav a span {
+   border-bottom: 1px solid #bfbfbfb0;
+   padding-bottom: 6px;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 /* Header */
 
 .main-header {
@@ -174,77 +219,6 @@ body {
 }
 
 /* Main */
-
-.contenedor-menu {
-    align-self: center;
-    display: flex;
-    justify-content: center;
-}
-
-.menu-open {
-    background-color: rgb(18, 17, 17);
-    position: fixed;
-    z-index: 99;
-    top: 0px;
-    left: 0px;
-    width: 57%;
-    height: 100%;
-    display: none;
-}
-
-.menu-close {
-    font-size: 30px;
-    color: white;
-    text-align: right;
-    right: 20px;
-    top: 15px;
-    position: absolute;
-}
-
-.open-list {
-    list-style: none;
-    text-decoration: none;
-    margin-top: 50px;
-    padding-left: 15px;
-    text-align: start;
-}
-
-.open-list li {
-    list-style: none;
-    text-decoration: none;
-    margin-top: 30px;
-}
-
-.open-list li img {
-    width: 40%;
-    margin: auto;
-}
-
-#link-desplegable {
-    font-size: 19px;
-    text-decoration: none;
-    padding-bottom: 7px;
-    color: #f7f7f7;
-    border-bottom: 1px solid #313131;
-}
-
-@keyframes aperturaMenu {
-    0% {
-        transform: translateX(-200px)
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes cierreMenu {
-    0% {
-        transform: translateX(0px)
-    }
-    100% {
-        transform: translateX(-500px);
-    }
-}
 
 .description {
     width: 100%;
@@ -377,7 +351,7 @@ p.font-size {
     padding: 0px;
 }
 
-.formas-de-pago {
+.div-formas-de-pago {
     display: flex;
     padding: 3px 11px 35px;
 }
@@ -400,12 +374,10 @@ p.font-size {
 
 .margin-nosotros1 {
     margin-top: 20px;
-    /* margin: 60px 30px 0px 0px; */
 }
 
 .margin-nosotros2 {
     margin-bottom: 20px;
-    /* margin: 0px 30px 0px 0px; */
 }
 
 .main-section {
@@ -422,7 +394,6 @@ p.font-size {
 }
 
 .main-section h3 {
-    /* margin-top: 35px; */
     margin-top: 20px;
     font-size: 25px;
 }
@@ -453,7 +424,6 @@ p.font-size {
 }
 
 .text-ig {
-    /* font-size: 27.5px; */
     font-size: 22px;
     color: #000000;
     text-decoration: none;
@@ -488,7 +458,6 @@ p.font-size {
     border-bottom: 3px solid #808080;
     border-radius: 5px;
     margin-bottom: 30px;
-    /* margin: 0px 30px 20px 0px; */
     padding: 10px;
     text-align: center;
 }
@@ -545,7 +514,6 @@ p.font-size {
     border-bottom: 3px solid #000000;
     border-right: 3px solid #d3d3d3;
     height: 115px;
-    /* margin: 0px 10px 15px 20px; */
     margin: 10px 0px;
     padding: 10px;
 }
@@ -562,6 +530,10 @@ p.font-size {
 
 .contacto{
     padding-top: 20px;
+}
+
+.w100{
+    width: 100%;
 }
 
 /* Como llegar */
@@ -586,7 +558,6 @@ p.font-size {
 }
 
 .flex-como-llegar li {
-    /* padding: 0px 10px; */
     padding: 3px 5px;
 }
 
@@ -655,8 +626,8 @@ p.font-size {
     .none {
         display: block;
     }
-    .contenedor-menu, 
-    .menu-open {
+    .hamburguer-button, 
+    .mySidenav {
         display: none;
     }
     .equipment,
@@ -675,10 +646,10 @@ p.font-size {
         width: 15px; 
     }
     .link-main {
-        font-size: 20px;
+        font-size: 21px;
     }
     .text-nosotros {
-        font-size: 19px;
+        font-size: 20px;
     }
     .flex-como-llegar {
         font-size: 15px;
@@ -713,12 +684,21 @@ p.font-size {
     }
     .main-footer {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         padding-bottom: 35px;
     }
     footer{
         background-color: rgb(18, 17, 17);
     }
+    .formas-de-pago{
+        padding: 5px 0px;
+    }
+    .div-formas-de-pago {
+        flex-direction: column;
+    }
+    .section-contacto {
+        font-size: 18px;
+     }
 }
 
 @media (min-width:1200px) {
@@ -726,9 +706,14 @@ p.font-size {
     .main-section article {
         width: 30%;
     }
-    .nosotros article,
-    .contacto article  {
+    .nosotros article  {
         width: 50%;
+    }
+    article.w100{
+        width: 60%;
+    }
+    article.text-nosotros.w100{
+        width: 40%;
     }
     .como-llegar article {
         width: 100%;
@@ -744,7 +729,7 @@ p.font-size {
         box-shadow: 0px 0px 4px rgb(100, 100, 100);
     }
     .link-main {
-        font-size: 20px;
+        font-size: 22px;
     }
     .text-nosotros {
         font-size: 21px;
@@ -788,5 +773,33 @@ p.font-size {
         justify-content: space-around;
         width: 80%;
     }
-    
+    .margin-nosotros1 {
+        margin: 60px 30px 0px 0px;
+    }
+    .margin-nosotros2 {
+     margin: 0px 30px 0px 0px;
+    }
+    .main-section h3 {
+        margin-top: 35px;
+    }
+    .text-ig {
+        font-size: 27.5px;
+    }
+    .section-certificaciones {
+        margin: 0px 30px 20px 0px;
+    }
+    .title-certificaciones{
+        font-size: 23px;
+    }
+    .section-contacto {
+        margin: 0px 10px 15px 20px; 
+    }
+    .flex-como-llegar li {
+        padding: 0px 10px;
+    }
+    .section-contacto {
+        font-size: 17px;
+        height: px;
+        padding: 10px;
+     }
 }

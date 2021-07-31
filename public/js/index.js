@@ -1,28 +1,18 @@
-window.onload = function() {
-    //menu desplegable mobile
-    let burguerMenu = document.querySelector("#contenedor-menu");
-    let menuOpen = document.querySelector("#menu-open");
-    let linkDesplegable = document.querySelector("#link-desplegable");
-    let menuClose = document.querySelector("#menu-close");
-
-    burguerMenu.addEventListener("click", function() {
-        menuOpen.style.display = "block";
-        menuOpen.style.animation = "aperturaMenu 1s 1" //agregamos la animacion de css que despliega el menú
-
-    });
-    menuClose.addEventListener("click", function() {
-        menuOpen.style.animation = "cierreMenu 1s 1" //agregamos la animacio de css que cierra el menu
-        function cierre() {
-            return menuOpen.style.display = "none"
-        }
-        setTimeout(cierre, 1000) //con set timeout retrasamos el diplay none, ejecuta la funcion luego del tiempo establecido
-
-    })
-    linkDesplegable.addEventListener("click", function() {
-        menuOpen.style.display = "none"
+window.onload = function() {                
+    //Menu desplegable mobile
+    //Al abrir el menu, su width pasa a 60%
+    let openNav = document.querySelector("#openNav");
+    openNav.addEventListener("click", function(){
+        document.getElementById("mySidenav").style.width = "60%";
     })
 
-     //carousel
+    //Al cerrar el menu, su width pasa a 0px
+    let closeNav = document.querySelector("#closeNav");
+    closeNav.addEventListener("click", function(){
+        document.getElementById("mySidenav").style.width = "0";
+    })
+
+    //carousel
     const carousel = document.querySelector(".carousel");
     
     if(carousel){
