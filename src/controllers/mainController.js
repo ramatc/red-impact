@@ -8,7 +8,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const mainController = {
     index: (req, res) => {
-		res.render('index', {titulo: "RED IMPACT"});
+		res.render('index', {titulo: "Red Impact"});
 	},
 	search:(req,res)=>{
         Products.findAll({
@@ -22,19 +22,19 @@ const mainController = {
         
     },
 	nosotros: (req, res) => {
-		res.render("nosotros", {titulo: "RED IMPACT - NOSOTROS"});
+		res.render("nosotros", {titulo: "Red Impact - Nosotros"});
 	},
 	productos: (req, res) => {
-		res.render("productos", {titulo: "RED IMPACT - PRODUCTOS"});
+		res.render("productos", {titulo: "Red Impact - Productos"});
 	},
 	certificaciones: (req, res) => {
-		res.render("certificaciones", {titulo: "RED IMPACT - CERTIFICACIONES"});
+		res.render("certificaciones", {titulo: "Red Impact - Certificaciones"});
 	},
 	contacto: (req, res) => {
-		res.render("contacto", {titulo: "RED IMPACT - CONTACTO"});
+		res.render("contacto", {titulo: "Red Impact - Contacto"});
 	},
 	comoLlegar: (req, res) => {
-		res.render("como-llegar", {titulo: "RED IMPACT - ¿CÓMO LLEGAR?"});
+		res.render("como-llegar", {titulo: "Red Impact - ¿Cómo llegar?"});
 	}
 
 }  
