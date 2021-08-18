@@ -12,7 +12,7 @@ body {
 body {
     font-family: "Raleway", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 
@@ -36,7 +36,7 @@ body {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #ffffff;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -116,7 +116,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 24px;
-    color: #ffffff;
+    color: #fff;
     display: block;
     transition: 0.3s;
     margin-bottom: 4px;
@@ -158,7 +158,7 @@ body {
 }
 
 .hamburguer-button {
-    color: #ffffff;
+    color: #fff;
     padding-bottom: 27px;
     padding-right: 23px;
     font-size: 20px;
@@ -181,7 +181,7 @@ body {
 .search-button {
     font-size: 12px;
     border: none;
-    background-color: #ffffff;
+    background-color: #fff;
     width: 10%;
 }
 
@@ -213,7 +213,7 @@ body {
 }
 
 .linknav {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
@@ -267,7 +267,7 @@ p.font-size {
 }
 
 .category-title {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 15px 0px;
     font-size: 21px;
     font-weight: normal;
@@ -318,7 +318,7 @@ p.font-size {
 }
 
 .titlefooter {
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
@@ -342,7 +342,7 @@ p.font-size {
 }
 
 .icon {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
@@ -361,14 +361,14 @@ p.font-size {
 
 .link-main {
     text-decoration: none;
-    color: #000000;
+    color: #000;
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
 }
 
-.text-nosotros {
-    font-size: 16px;
+.text-nosotros{
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -380,20 +380,24 @@ p.font-size {
     margin-bottom: 20px;
 }
 
-.main-section {
+.main-section,
+.certif-section {
     width: 80%;
     margin: 0 auto;
 }
 
-.main-section article {
+.main-section article,
+.certif-section article {
     background-color: #fff;
 }
 
-.main-section article img {
+.main-section article img,
+.certif-section article img {
     width: 100%;
 }
 
-.main-section h3 {
+.main-section h3,
+.certif-section h3 {
     margin-top: 20px;
     font-size: 25px;
 }
@@ -425,7 +429,7 @@ p.font-size {
 
 .text-ig {
     font-size: 22px;
-    color: #000000;
+    color: #000;
     text-decoration: none;
     transition: color 0.6s;
 }
@@ -435,7 +439,7 @@ p.font-size {
 }
 
 .icon-ig {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     font-size: 47px;
     padding-right: 8px;
@@ -511,11 +515,10 @@ p.font-size {
 
 .section-contacto {
     background-color: #f5f5f5;
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid #000;
     border-right: 3px solid #d3d3d3;
-    height: 115px;
     margin: 10px 0px;
-    padding: 10px;
+    padding: 18px 10px;
 }
 
 .section-contacto ul li {
@@ -524,7 +527,7 @@ p.font-size {
 
 .section-contacto li a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
     font-weight: 600;
 }
 
@@ -563,7 +566,7 @@ p.font-size {
 
 .flex-como-llegar li a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
 
 .flex-como-llegar li a:hover {
@@ -596,11 +599,6 @@ p.font-size {
 	box-shadow: 2px 2px 3px #999;
     z-index:100;
 }
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-    background-color:#fff;
-}
 .my-float{
 	margin-top:16px;
 }
@@ -618,7 +616,7 @@ p.font-size {
         width:58%;
     }
     .text-nosotros {
-        font-size: 17px;
+        font-size: 18px;
     }
     .flex-como-llegar {
         font-size: 14px;
@@ -639,7 +637,8 @@ p.font-size {
         width: 100%;
         order: 1;
     }
-    .categories {
+    .categories,
+    .contact-category {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -655,7 +654,8 @@ p.font-size {
         display: none;
     }
     .equipment,
-    .main-section {
+    .main-section,
+    .certif-section {
         width:70%;
     }
     .main-navbar{
@@ -726,18 +726,18 @@ p.font-size {
 }
 
 @media (min-width:1200px) {
-    .equipment article,
-    .main-section article {
+    .equipment article{
         width: 30%;
     }
-    .nosotros article  {
+    .contact-category{
+        flex-direction: column-reverse;
+    }
+    .certif-section article {
         width: 50%;
     }
-    article.w100{
-        width: 60%;
-    }
-    article.text-nosotros.w100{
-        width: 40%;
+    article.text-contacto.w100{
+        display: flex;
+        line-height: 1.6rem;
     }
     .como-llegar article {
         width: 100%;
@@ -757,18 +757,13 @@ p.font-size {
     }
     .text-nosotros {
         font-size: 21px;
+        line-height: 2.2rem;
     }
     .linknav {
         font-size: 17px;
     }
     .linknav:hover {
         color: #D6D6D6;
-    }
-    .margin-nosotros1 {
-        margin: 60px 30px 0px 0px;
-    }
-    .margin-nosotros2 {
-        margin: 0px 30px 0px 0px;
     }
     .prev:hover,
     .next:hover {
@@ -790,18 +785,9 @@ p.font-size {
     .copyrightText {
         padding: 11px 100px;
     }
-    .section-contacto {
-        margin: 0px 10px 15px 20px;
-    }
     .main-footer {
         justify-content: space-around;
         width: 80%;
-    }
-    .margin-nosotros1 {
-        margin: 60px 30px 0px 0px;
-    }
-    .margin-nosotros2 {
-     margin: 0px 30px 0px 0px;
     }
     .main-section h3 {
         margin-top: 35px;
@@ -815,15 +801,19 @@ p.font-size {
     .title-certificaciones{
         font-size: 23px;
     }
-    .section-contacto {
-        margin: 0px 10px 15px 20px; 
-    }
     .flex-como-llegar li {
         padding: 0px 10px;
     }
     .section-contacto {
         font-size: 17px;
-        height: px;
-        padding: 10px;
-     }
+        width: 33%;
+    }
+    .mgn-right{
+        margin-right: 15px;
+    }
+    .float:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color:#fff;
+    }
 }
