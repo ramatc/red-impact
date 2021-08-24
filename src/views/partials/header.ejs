@@ -5,33 +5,25 @@
         </div>
 
         <div class="burger-search">
-            <!-- <div class="contenedor-menu" id="contenedor-menu">
-                <i class="fas fa-bars hamburguer-button"></i>
-            </div>
-            <div class="menu-open" id="menu-open">
-                <ul class="open-list">
-                    <li><span class="menu-close" id="menu-close">x</span></li>
-                    <li><a href="/nosotros" id="link-desplegable">Nosotros</a></li>
-                    <li><a href="/productos" id="link-desplegable">Productos</a></li>
-                    <li><a href="http://www.redimpact.com.ar/catalogo.pdf" target="_blank" rel="noreferrer"
-                            id="link-desplegable">Catálogo</a></li>
-                    <li><a href="/contacto" id="link-desplegable">Contacto</a></li>
-                    <li><a href="/como-llegar" id="link-desplegable">¿Cómo llegar?</a></li>
-                    <li><a href="/certificaciones" id="link-desplegable">Certificaciones</a></li>
-                    <li><a href="/"><img src="images/logo-redimpact.png" alt="Logo de Red Impact"></a></li>
-                </ul>
-            </div> -->
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
-                <a href="/nosotros"><span>Nosotros</span></a>
-                <a href="/productos"><span>Productos</span></a>
-                <a href="http://www.redimpact.com.ar/catalogo.pdf" target="_blank"
-                    rel="noreferrer"><span>Catálogo</span>
-                </a>
-                <a href="/contacto"><span>Contacto</span> </a>
-                <a href="/como-llegar"><span>¿Cómo llegar?</span></a>
-                <a href="/certificaciones"><span>Certificaciones</span></a>
+                <button class="dropdown-btn toggle-btn"><span class="btnProducts">Productos</span>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#about">Indumentaria</a>
+                    <a href="#services">Calzado</a>
+                    <a href="#contact">Accesorios</a>
+                    <a href="#clients">Bolsos y mochilas</a>
+                    <a href="#contact">Uniformes</a>
+                    <a href="#contact">Atributos militares</a>
+                </div>
+                <a href="/nosotros">Nosotros</a>
+                <a href="http://www.redimpact.com.ar/catalogo.pdf" target="_blank" rel="noreferrer">Catálogo</a>
+                <a href="/contacto">Contacto</a>
+                <a href="/como-llegar">¿Cómo llegar?</a>
+                <a href="/certificaciones">Certificaciones</a>
                 <a href="/"><img src="images/logo-redimpact.png" alt="Logo de Red Impact"></a>
             </div>
 
@@ -41,16 +33,14 @@
                 <input type="text" name="search" placeholder="¿Qué estás buscando?" class="campo-busqueda">
                 <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
             </form>
-
         </div>
-
     </section>
 
     <section class="main-navbar">
         <nav class="header-bottom-bar">
             <ul>
-                <li><a href="/nosotros" class="linknav">Nosotros</a></li>
                 <li><a href="/productos" class="linknav">Productos</a></li>
+                <li><a href="/nosotros" class="linknav">Nosotros</a></li>
                 <li><a href="http://www.redimpact.com.ar/catalogo.pdf" class="linknav" target="_blank"
                         rel="noreferrer">Catálogo</a></li>
                 <li><a href="/contacto" class="linknav">Contacto</a></li>
@@ -58,6 +48,5 @@
                 <li><a href="/certificaciones" class="linknav">Certificaciones</a></li>
             </ul>
         </nav>
-
     </section>
 </header>

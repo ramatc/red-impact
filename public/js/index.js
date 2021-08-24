@@ -12,7 +12,7 @@ window.onload = function() {
         document.getElementById("mySidenav").style.width = "0";
     })
 
-    //carousel
+    //Carousel
     const carousel = document.querySelector(".carousel");
     
     if(carousel){
@@ -76,7 +76,7 @@ window.onload = function() {
         setInterval(avanzar, 4000) //Cambia la imagen cada 4 segundos
     }
 
-    //zoom imagen product detail
+    //Zoom imagen product detail
     let mainProductImage = document.querySelector("#mainProductImage")
     let containerZoom = document.querySelector(".container-zoom")
     let closeZoom = document.querySelector(".close-zoom")
@@ -89,5 +89,32 @@ window.onload = function() {
             })
         })
     }
+
+    //Dropdown para mostrar la la lista de productos
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+    }
+    
+    //Toggle que va cambiando la flecha hacia arriba o hacia abajo al hacer click
+    let toggleBtn = document.querySelector(".toggle-btn");
+    toggleBtn.addEventListener("click", function(){
+        toggleBtn.querySelector("i").classList.toggle("fa-caret-up");
+    })
+
+    //Redireccion al hacer click
+    let btnProducts = document.querySelector(".btnProducts");
+    btnProducts.addEventListener("click", function(){
+        location.href ='/productos';
+    })
 
 }
