@@ -3,7 +3,7 @@ window.onload = function() {
     //Al abrir el menu, su width pasa a 60%
     let openNav = document.querySelector("#openNav");
     openNav.addEventListener("click", function(){
-        document.getElementById("mySidenav").style.width = "60%";
+        document.getElementById("mySidenav").style.width = "70%";
     })
 
     //Al cerrar el menu, su width pasa a 0px
@@ -95,7 +95,7 @@ window.onload = function() {
     var i;
     for (i = 0; i < dropdown.length; i++) {
         dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
+          this.classList.toggle("activeDropdown");
           var dropdownContent = this.nextElementSibling;
           if (dropdownContent.style.display === "block") {
             dropdownContent.style.display = "none";
@@ -106,15 +106,42 @@ window.onload = function() {
     }
     
     //Toggle que va cambiando la flecha hacia arriba o hacia abajo al hacer click
-    let toggleBtn = document.querySelector(".toggle-btn");
-    toggleBtn.addEventListener("click", function(){
-        toggleBtn.querySelector("i").classList.toggle("fa-caret-up");
-    })
+    let toggleBtn = document.getElementsByClassName("toggle-btn");
+    for (i = 0; i < toggleBtn.length; i++) {
+        toggleBtn[i].addEventListener("click", function(){
+            this.querySelector("i").classList.toggle("fa-caret-up");
+        })        
+    }
 
     //Redireccion al hacer click
     let btnProducts = document.querySelector(".btnProducts");
+    let btnIndumentaria = document.querySelector(".btnIndumentaria");
+    let btnCalzado = document.querySelector(".btnCalzado");
+    let btnAccesorios = document.querySelector(".btnAccesorios");
+    let btnBolsos = document.querySelector(".btnBolsos");
+    let btnUniformes = document.querySelector(".btnUniformes");
+    let btnAtributos = document.querySelector(".btnAtributos");
+
     btnProducts.addEventListener("click", function(){
         location.href ='/productos';
+    })
+    btnIndumentaria.addEventListener("click", function(){
+        location.href ='/indumentaria';
+    })
+    btnCalzado.addEventListener("click", function(){
+        location.href ='/calzado';
+    })
+    btnAccesorios.addEventListener("click", function(){
+        location.href ='/accesorios';
+    })
+    btnBolsos.addEventListener("click", function(){
+        location.href ='/bolsos-y-mochilas';
+    })
+    btnUniformes.addEventListener("click", function(){
+        location.href ='/uniformes';
+    })
+    btnAtributos.addEventListener("click", function(){
+        location.href ='/atributos-militares';
     })
 
 }

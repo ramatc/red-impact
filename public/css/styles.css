@@ -132,23 +132,28 @@ body {
     padding-top: 14px;
 }
 
-/* .sidenav a:hover, .dropdown-btn:hover {
-    color: #f1f1f1;
-} */
-
-.active {
+.activeDropdown {
     background-color: #ea2429;
-    color: #fff;
+}
+
+.bgc{
+    background-color: #111;
 }
 
 .dropdown-container {
     display: none;
     padding-left: 12px;
+    width: 100%;
 }
 
-.dropdown-container a{
+.dropdown-container a,
+.subBtn{
     color: #b1b1b1;
     font-size: 17px;
+}
+
+.subBtn{
+    border-bottom: 1px solid #fff;
 }
 
 .fa-caret-down {
