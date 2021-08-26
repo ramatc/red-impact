@@ -25,6 +25,9 @@ app.listen(3000, ()=>{
 const rutasMain = require("./routes/main");
 app.use("/" , rutasMain);
 
+const rutasProductos = require("./routes/products");
+app.use("/products" , rutasProductos);
+
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
 

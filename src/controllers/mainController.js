@@ -24,9 +24,6 @@ const mainController = {
 	nosotros: (req, res) => {
 		res.render("nosotros", {titulo: "Red Impact - Nosotros"});
 	},
-	productos: (req, res) => {
-		res.render("productos", {titulo: "Red Impact - Productos"});
-	},
 	certificaciones: (req, res) => {
 		res.render("certificaciones", {titulo: "Red Impact - Certificaciones"});
 	},

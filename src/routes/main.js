@@ -7,7 +7,6 @@ const mainController = require("../controllers/mainController");
 router.get("/", mainController.index);
 router.get('/search', mainController.search);
 router.get("/nosotros", mainController.nosotros);
-router.get("/productos", mainController.productos);
 router.get("/certificaciones", mainController.certificaciones);
 router.get("/contacto", mainController.contacto);
 router.get("/como-llegar", mainController.comoLlegar);
