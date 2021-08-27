@@ -130,6 +130,7 @@ body {
 
 .sidenav a img{
     padding-top: 14px;
+    width: 125px;
 }
 
 .activeDropdown {
@@ -153,7 +154,7 @@ body {
 }
 
 .subBtn{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #404040;
 }
 
 .fa-caret-down {
@@ -196,7 +197,7 @@ a#closeNav.closebtn{
 }
 
 .logo {
-    width: 60px;
+    width: 26%;
 }
 
 .hamburguer-button {
@@ -243,18 +244,18 @@ a#closeNav.closebtn{
 
 .header-bottom-bar {
     padding-top: 10px;
-    width: 80%;
+    width: 78%;
     background: linear-gradient(178.6deg, rgb(32, 32, 33) 11.8%, rgb(66, 68, 71) 83.8%);
 }
 
 .header-bottom-bar ul{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .linknav {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .d-flex{
@@ -264,20 +265,13 @@ a#closeNav.closebtn{
     list-style: none;
 }
 
-.linknav {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
     background-color: inherit;
-    text-transform: uppercase;
-    font-weight: 600;
+    /* text-transform: uppercase; */
 }
 
 .dropbtn{
@@ -294,7 +288,7 @@ a#closeNav.closebtn{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     left: 0px;
-    font-size: 15px;
+    font-size: 16px;
     padding: 22px 0px;
 }
 
@@ -305,6 +299,11 @@ a#closeNav.closebtn{
     text-decoration: none;
     display: block;
     text-align: left;
+    font-weight: lighter;
+}
+
+.dropdown-content a:hover{
+    text-decoration: underline;
 }
 
 .dropdown:hover .dropdown-content {
@@ -743,6 +742,9 @@ h3.normal {
     .equipment {
         width: 68%;
     }
+    .logo{
+        width: 18%;
+    }
 }
 
 @media(min-width: 576px) {
@@ -836,7 +838,7 @@ h3.normal {
         padding-top: 30px;
     }
     .logo {
-        width: 70px;
+        width: 80px;
     }
     .description {
         font-size: 18px;
@@ -894,7 +896,8 @@ h3.normal {
         font-size: 21px;
         line-height: 2.2rem;
     }
-    .linknav {
+    .linknav,
+    .dropdown .dropbtn {
         font-size: 17px;
     }
     .linknav:hover {
@@ -911,7 +914,7 @@ h3.normal {
         color: #ea2429;
     }
     .logo {
-        width: 100px;
+        width: 110px;
     }
     .equipment h3,
     .category-title {
