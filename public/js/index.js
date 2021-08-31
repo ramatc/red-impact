@@ -113,6 +113,28 @@ window.onload = function() {
         })        
     }
 
+    let filterBox = document.querySelector(".filter-box");
+    let dropCategories = document.querySelector(".drop-categories");
+
+    filterBox.addEventListener('click', function () {
+    if (dropCategories.classList.contains('hidden')) {
+        dropCategories.classList.remove('hidden');
+        setTimeout(function () {
+            dropCategories.classList.remove('visuallyhidden');
+        }, 20);
+    } else {
+        dropCategories.classList.add('visuallyhidden');    
+        dropCategories.addEventListener('transitionend', function(e) {
+            dropCategories.classList.add('hidden');
+        }, {
+        capture: false,
+        once: true,
+        passive: false
+        });
+    }
+    
+    }, false);
+
     //Redireccion al hacer click
     let btnProducts = document.querySelector(".btnProducts");
     let btnIndumentaria = document.querySelector(".btnIndumentaria");
@@ -121,6 +143,7 @@ window.onload = function() {
     let btnBolsos = document.querySelector(".btnBolsos");
     let btnUniformes = document.querySelector(".btnUniformes");
     let btnAtributos = document.querySelector(".btnAtributos");
+    let dropbtn = document.querySelector(".dropbtn");
 
     btnProducts.addEventListener("click", function(){
         location.href ='/productos';
@@ -142,6 +165,9 @@ window.onload = function() {
     })
     btnAtributos.addEventListener("click", function(){
         location.href ='/atributos-militares';
+    })
+    dropbtn.addEventListener("click", function(){
+        location.href ='/products';
     })
 
 }
