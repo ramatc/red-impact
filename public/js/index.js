@@ -97,10 +97,18 @@ window.onload = function() {
         dropdown[i].addEventListener("click", function() {
           this.classList.toggle("activeDropdown");
           var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
+          if(dropdownContent.classList.contains("subCategories")){
+            if (dropdownContent.style.display === "flex") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "flex";
+              }
+          }else{
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
           }
         });
     }
@@ -113,27 +121,27 @@ window.onload = function() {
         })        
     }
 
-    let filterBox = document.querySelector(".filter-box");
-    let dropCategories = document.querySelector(".drop-categories");
-
-    filterBox.addEventListener('click', function () {
-    if (dropCategories.classList.contains('hidden')) {
-        dropCategories.classList.remove('hidden');
-        setTimeout(function () {
-            dropCategories.classList.remove('visuallyhidden');
-        }, 20);
-    } else {
-        dropCategories.classList.add('visuallyhidden');    
-        dropCategories.addEventListener('transitionend', function(e) {
-            dropCategories.classList.add('hidden');
-        }, {
-        capture: false,
-        once: true,
-        passive: false
-        });
+    const filterBox = document.querySelector(".filter-box");
+    if(filterBox){
+        let dropCategories = document.querySelector(".drop-categories");
+        filterBox.addEventListener('click', function () {
+        if (dropCategories.classList.contains('hidden')) {
+            dropCategories.classList.remove('hidden');
+            setTimeout(function () {
+                dropCategories.classList.remove('visuallyhidden');
+            }, 20);
+        } else {
+            dropCategories.classList.add('visuallyhidden');    
+            dropCategories.addEventListener('transitionend', function(e) {
+                dropCategories.classList.add('hidden');
+            }, {
+            capture: false,
+            once: true,
+            passive: false
+            });
+        }
+        }, false);
     }
-    
-    }, false);
 
     //Redireccion al hacer click
     let btnProducts = document.querySelector(".btnProducts");
@@ -146,7 +154,7 @@ window.onload = function() {
     let dropbtn = document.querySelector(".dropbtn");
 
     btnProducts.addEventListener("click", function(){
-        location.href ='/productos';
+        location.href ='/products';
     })
     btnIndumentaria.addEventListener("click", function(){
         location.href ='/indumentaria';
