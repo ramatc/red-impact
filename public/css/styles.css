@@ -671,6 +671,10 @@ h3.normal {
     height: 100%;
 }
 
+aside{
+    display: none;
+}
+
 /* Certificaciones */
 
 .section-certificaciones {
@@ -813,8 +817,8 @@ h3.normal {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 20px;
+    bottom: 30px;
+    right: 10px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -953,6 +957,10 @@ h3.normal {
     .section-contacto {
         font-size: 18px;
     }
+    .articleProduct,
+    .moreProducts{
+        width: 23%;
+    }
 }
 
 @media (min-width:1200px) {
@@ -1049,5 +1057,15 @@ h3.normal {
         text-decoration: none;
         color: #25d366;
         background-color: #fff;
+    }
+    .articleProduct,
+    .moreProducts{
+        cursor: pointer;
+    }
+    .sticky-menu{
+        display: none;
+    }
+    aside{
+        display: block;
     }
 }
