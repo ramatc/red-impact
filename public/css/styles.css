@@ -341,7 +341,7 @@ a.categoryTitle{
 }
 
 .shadow {
-    box-shadow: 0px 0px 4px rgb(100, 100, 100);
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
 .equipment article img {
@@ -649,8 +649,9 @@ h3.normal {
     width: 47%;
     padding-bottom: 7px;
     margin-bottom: 15px;
-    box-shadow: 0px 0px 3px rgb(100 100 100);
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
+
 
 .articleProduct img{
     width: 100%;
@@ -663,7 +664,7 @@ h3.normal {
 .moreProducts{
     width: 47%;
     margin-bottom: 15px;
-    box-shadow: 0px 0px 3px rgb(100 100 100);
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
 .moreProducts img{
@@ -671,8 +672,45 @@ h3.normal {
     height: 100%;
 }
 
+.main-content{
+    display: flex;
+    justify-content: space-between;
+}
+
 aside{
     display: none;
+    position: sticky !important;
+    top: 10px;
+    z-index: 100;
+    height: 100%;
+    width: 18%;
+    padding: 7px 0px;
+}
+
+aside ul{
+    list-style-type: none;
+}
+
+aside ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+aside h3:first-child{
+    padding-bottom: 7px;
+    padding-top: 0px;
+}
+
+aside h3{
+    padding: 7px 0px;
+}
+
+.products-list{
+    width: 80%;
+}
+
+.banner-products{
+    padding: 20px 0px 7px 0px;
 }
 
 /* Certificaciones */
@@ -985,10 +1023,11 @@ aside{
         color: #808080;
     }
     .shadow {
+        transition: box-shadow 0.3s ease;
         box-shadow: none;
     }
     .shadow:hover {
-        box-shadow: 0px 0px 4px rgb(100, 100, 100);
+        box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
     }
     .link-main {
         font-size: 22px;
