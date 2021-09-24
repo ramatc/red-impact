@@ -77,20 +77,22 @@ window.onload = function() {
     }
 
     //Zoom imagen product detail
-    let mainProductImage = document.querySelector("#mainProductImage")
-    let containerZoom = document.querySelector(".container-zoom")
-    let closeZoom = document.querySelector(".close-zoom")
+    let mainProductImage = document.getElementsByClassName("main-product-image");
+    let containerZoom = document.getElementsByClassName("container-zoom");
+    let closeZoom = document.getElementsByClassName("close-zoom");
 
     if(mainProductImage){
-        mainProductImage.addEventListener("click",function(){
-                containerZoom.style.display = "flex"
-            closeZoom.addEventListener("click",function(){
-                containerZoom.style.display = "none"
-            })
-        })
+        for (let i = 0; i < mainProductImage.length; i++) {
+            mainProductImage[i].addEventListener("click", function(){
+                containerZoom[i].style.display = "flex";
+                closeZoom[i].addEventListener("click", function(){
+                    containerZoom[i].style.display = "none";
+                })
+            })   
+        }
     }
 
-    //Dropdown para mostrar la la lista de productos
+    //Dropdown para mostrar la lista de productos
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
     for (i = 0; i < dropdown.length; i++) {
