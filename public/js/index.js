@@ -157,7 +157,7 @@ window.onload = function() {
         location.href ='/products';
     })
     btnIndumentaria.addEventListener("click", function(){
-        location.href ='/indumentaria';
+        location.href ='/products/productosInd';
     })
     btnCalzado.addEventListener("click", function(){
         location.href ='/calzado';

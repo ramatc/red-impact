@@ -705,8 +705,9 @@ aside h3{
     padding: 7px 0px;
 }
 
-.products-list{
-    width: 80%;
+aside h3 a{
+    color: black;
+    text-decoration: none;
 }
 
 .banner-products{
@@ -1106,5 +1107,8 @@ aside h3{
     }
     aside{
         display: block;
+    }
+    .products-list{
+        width: 80%;
     }
 }
