@@ -468,7 +468,7 @@ p.font-size {
 .link-main {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -495,9 +495,12 @@ p.font-size {
     width: 100%;
 }
 
-h3.normal {
+ul.normal {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 23px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .follow-ig {
@@ -980,7 +983,8 @@ aside h3 a{
     .logo {
         width: 80px;
     }
-    .description {
+    .description,
+    .section-contacto {
         font-size: 18px;
     }
     .main-footer {
@@ -996,9 +1000,6 @@ aside h3 a{
     }
     .div-formas-de-pago {
         flex-direction: column;
-    }
-    .section-contacto {
-        font-size: 18px;
     }
     .articleProduct,
     .moreProducts{
@@ -1035,7 +1036,7 @@ aside h3 a{
         box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
     }
     .link-main {
-        font-size: 22px;
+        font-size: 21px;
     }
     .text-nosotros {
         font-size: 21px;
@@ -1045,15 +1046,13 @@ aside h3 a{
     .dropdown .dropbtn {
         font-size: 17px;
     }
-    .linknav:hover {
+    .linknav:hover,
+    .linkfooter:hover {
         color: #D6D6D6;
     }
     .prev:hover,
     .next:hover {
         background-color: rgba(0, 0, 0, 0.8);
-    }
-    .linkfooter:hover {
-        color: #D6D6D6;
     }
     .link-main:hover {
         color: #ea2429;
@@ -1072,7 +1071,7 @@ aside h3 a{
         justify-content: space-around;
         width: 80%;
     }
-    h3.normal {
+    ul.normal {
         margin-top: 35px;
     }
     .text-ig {

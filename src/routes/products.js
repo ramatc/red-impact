@@ -10,4 +10,7 @@ router.get("/", productsController.list);
 //Ruta a listado de productos de indumentaria
 router.get("/productosInd", productsController.productosInd);
 
+//Ruta a detalle de producto
+router.get("/:id", productsController.detail);
+
 module.exports = router;

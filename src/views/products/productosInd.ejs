@@ -8,122 +8,18 @@
 
     <main>
         <section class="section-products">
-            <h3 class="normal"><a href="/" class="link-main normal">Inicio</a> / <a href="/products"
-                    class="link-main normal">
-                    Productos</a> / <a class="link-main">Indumentaria</a>
-            </h3>
+            <ul class="normal">
+                <li><a href="/" class="link-main normal">Inicio</a> /&nbsp;</li>
+                <li><a href="/products" class="link-main normal">Productos</a> /&nbsp;</li>
+                <li><a class="link-main">Indumentaria</a></li>
+            </ul>
 
             <img src="/images/banner-militar.png" alt="Banner de Productos" class="banner banner-products">
 
-            <div class="sticky-menu">
-                <div class="filter-box">
-                    Filtros <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                </div>
-                <div class="drop-categories hidden">
-                    <!-- INDUMENTARIA -->
-                    <button class="dropdown-btn toggle-btn bgcProducts"><span class="btnIndumentaria filterTitles"><a
-                                href="" class="filterColor">Indumentaria</a></span>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container subCategories">
-                        <a href="#about">Pantalones</a>
-                        <a href="#about">Chalecos</a>
-                        <a href="#about">Camisas</a>
-                        <a href="#about">Escudos</a>
-                        <a href="#about">Abrigos</a>
-                    </div>
-                    <!-- CALZADO -->
-                    <button class="dropdown-btn toggle-btn bgcProducts"><span class="btnCalzado filterTitles"><a href=""
-                                class="filterColor">Calzado</a></span>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container subCategories">
-                        <a href="#about">Borceguies</a>
-                        <a href="#about">Zapatos</a>
-                        <a href="#about">Botas</a>
-                    </div>
-                    <!-- ACCESORIOS -->
-                    <button class="dropdown-btn toggle-btn bgcProducts"><span class="btnAccesorios filterTitles"><a
-                                href="" class="filterColor">Accesorios</a></span>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container subCategories">
-                        <a href="#about">Linternas</a>
-                        <a href="#about">Guantes</a>
-                        <a href="#about">Cinturones</a>
-                    </div>
-                    <!-- BOLSOS Y MOCHILAS -->
-                    <button class="dropdown-btn toggle-btn bgcProducts"><span class="btnBolsos filterTitles"><a href=""
-                                class="filterColor">Bolsos y mochilas</a></span>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container subCategories">
-                        <a href="#about">Mochilas</a>
-                        <a href="#about">Bolsos</a>
-                    </div>
-                    <!-- UNIFORMES -->
-                    <button class="dropdown-btn toggle-btn bgcProducts"><span class="btnUniformes filterTitles"><a
-                                href="" class="filterColor">Uniformes</a></span>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container subCategories">
-                        <a href="#about">Policia Bonaerense</a>
-                        <a href="#about">GNA</a>
-                        <a href="#about">PSA</a>
-                    </div>
-                    <!-- ATRIBUTOS MILITARES -->
-                    <button class="dropdown-btn toggle-btn bgcProducts"><span class="btnAtributos filterTitles"><a
-                                href="" class="filterColor">Atributos militares</a></span>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container subCategories">
-                        <a href="#about">Seguridad</a>
-                        <a href="#about">Policial</a>
-                        <a href="#about">Militar</a>
-                    </div>
-                </div>
-            </div>
+            <%- include("../partials/stickymenu")%>
 
             <div class="main-content">
-                <aside>
-                    <h3><a href="products/productosInd">Indumentaria</a></h3>
-                    <ul>
-                        <li><a href="">Pantalones</a></li>
-                        <li><a href="">Camisas</a></li>
-                        <li><a href="">Chalecos</a></li>
-                        <li><a href="">Escudos</a></li>
-                        <li><a href="">Abrigo</a></li>
-                    </ul>
-                    <h3><a href="products/productosCalzado">Calzado</a></h3>
-                    <ul>
-                        <li><a href="">Borceguies</a></li>
-                        <li><a href="">Zapatos</a></li>
-                        <li><a href="">Botas</a></li>
-                    </ul>
-                    <h3><a href="products/productosAccesorios">Accesorios</a></h3>
-                    <ul>
-                        <li><a href="">Linternas</a></li>
-                        <li><a href="">Guantes</a></li>
-                        <li><a href="">Cinturones</a></li>
-                    </ul>
-                    <h3><a href="products/productosBolsos">Bolsos y mochilas</a></h3>
-                    <ul>
-                        <li><a href="">Mochilas</a></li>
-                        <li><a href="">Bolsos</a></li>
-                    </ul>
-                    <h3><a href="products/productosUniformes">Uniformes</a></h3>
-                    <ul>
-                        <li><a href="">Policia Bonaerense</a></li>
-                        <li><a href="">GNA</a></li>
-                        <li><a href="">PSA</a></li>
-                    </ul>
-                    <h3><a href="products/productosAtributos">Atributos militares</a></h3>
-                    <ul>
-                        <li><a href="">Seguridad</a></li>
-                        <li><a href="">Policial</a></li>
-                        <li><a href="">Militar</a></li>
-                    </ul>
-                </aside>
+                <%- include("../partials/aside")%>
 
                 <div class="products-list">
                     <!-- PANTALONES -->
