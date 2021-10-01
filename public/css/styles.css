@@ -244,7 +244,7 @@ a#closeNav.closebtn{
 
 .header-bottom-bar {
     padding-top: 10px;
-    width: 78%;
+    width: 70%;
     background: linear-gradient(178.6deg, rgb(32, 32, 33) 11.8%, rgb(66, 68, 71) 83.8%);
 }
 
@@ -258,7 +258,7 @@ a#closeNav.closebtn{
 .d-flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -688,7 +688,6 @@ p.font-size {
 }
 
 .title-product{
-    /* text-align: center; */
     font-size: 26px;
 }
 
@@ -720,13 +719,13 @@ p.font-size {
 
 .btn-wpp,
 .btn-mail{
-    width: 49%;
+    display: inline-block;
+    width: 49.5%;
     padding: 7px;
     font-size: 17px;
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    display: inline-block;
     text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
 .btn-wpp{
@@ -932,7 +931,7 @@ aside h3 a{
 }
 
 
-/* Medias 576px, 768px, 992px y 1200px */
+/* Medias 478px, 576px, 768px y 1200px */
 
 @media(min-width: 478px) {
     .equipment {
@@ -1010,7 +1009,7 @@ aside h3 a{
         width: 15px;
     }
     .link-main {
-        font-size: 21px;
+        font-size: 18px;
     }
     .text-nosotros {
         font-size: 20px;
@@ -1064,6 +1063,24 @@ aside h3 a{
     .articleProduct,
     .moreProducts{
         width: 23%;
+    }
+    .main-product{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .div-img{
+        width: 46%;
+    }
+    .div-product{
+        width: 51%;
+    }
+    .img-product {
+        margin-top: 0px;
+    }
+    .btn-wpp,
+    .btn-mail{
+        width: 49.2%;
     }
 }
 
@@ -1166,5 +1183,8 @@ aside h3 a{
     }
     .products-list{
         width: 80%;
+    }
+    .link-main {
+        font-size: 21px;
     }
 }
