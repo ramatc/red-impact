@@ -239,7 +239,6 @@ a#closeNav.closebtn{
 
 .header-top-bar {
     width: 100%;
-    padding: 12px;
 }
 
 .header-bottom-bar {
@@ -402,7 +401,6 @@ p.font-size {
 
 .main-footer {
     background-color: rgb(18, 17, 17);
-    text-align: center;
     padding: 35px 15px 0px;
     margin: 40px auto 0px;
 }
@@ -496,7 +494,7 @@ p.font-size {
 
 .breadcrumb {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 19px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -714,13 +712,15 @@ p.font-size {
 }
 
 .buttons-product{
+    display: flex;
+    justify-content: space-between;
     margin-top: 12px;
 }
 
 .btn-wpp,
 .btn-mail{
     display: inline-block;
-    width: 49.5%;
+    width: 49%;
     padding: 7px;
     font-size: 17px;
     text-align: center;
@@ -1009,7 +1009,7 @@ aside h3 a{
         width: 15px;
     }
     .link-main {
-        font-size: 18px;
+        font-size: 17px;
     }
     .text-nosotros {
         font-size: 20px;
@@ -1028,10 +1028,9 @@ aside h3 a{
         justify-content: center;
     }
     .search-form {
-        justify-content: center;
+        justify-content: end;
     }
     .header-top-bar {
-        padding: 10px;
         width: 40%;
         text-align: start;
     }
@@ -1048,8 +1047,9 @@ aside h3 a{
     }
     .main-footer {
         display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 35px;
+        justify-content: space-between;
+        width: 70%;
+        padding: 35px 0px;
     }
     footer {
         background-color: rgb(18, 17, 17);
@@ -1081,6 +1081,16 @@ aside h3 a{
     .btn-wpp,
     .btn-mail{
         width: 49.2%;
+    }
+    .titlefooter,
+    .linkfooter,
+    .div-formas-de-pago {
+        padding: 3px 0px;
+    }
+    .sub-header{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -1141,10 +1151,6 @@ aside h3 a{
     .copyrightText {
         padding: 11px 100px;
     }
-    .main-footer {
-        justify-content: space-around;
-        width: 80%;
-    }
     .breadcrumb {
         margin-top: 35px;
     }
@@ -1185,6 +1191,18 @@ aside h3 a{
         width: 80%;
     }
     .link-main {
-        font-size: 21px;
+        font-size: 20px;
+    }
+    .title-product{
+        font-size: 30px;
+    }
+    .code-product{
+        font-size: 16px;
+    }
+    .price-product{
+        font-size: 36px;
+    }
+    .description-product{
+        font-size: 18px;
     }
 }
