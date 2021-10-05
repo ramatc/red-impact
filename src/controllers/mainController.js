@@ -8,7 +8,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const mainController = {
     index: (req, res) => {
-		res.render('index', {titulo: "Red Impact"});
+		res.render('index', {titulo: "Red Impact - Indumentaria para las FFAA de Seguridad y Policiales"});
 	},
 	search:(req,res)=>{
         Products.findAll({
