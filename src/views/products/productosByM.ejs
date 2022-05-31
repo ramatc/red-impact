@@ -11,7 +11,7 @@
             <ul class="breadcrumb">
                 <li><a href="/" class="link-main">Inicio</a> /&nbsp;</li>
                 <li><a href="/products" class="link-main">Productos</a> /&nbsp;</li>
-                <li><a class="link-main bolder">Indumentaria</a></li>
+                <li><a class="link-main bolder">Bolsos y Mochilas</a></li>
             </ul>
 
             <img src="/images/banner-militar.png" alt="Banner de Productos" class="banner banner-products">
@@ -23,40 +23,26 @@
 
                 <div class="products-list">
                     <div class="sectionFeatured">
-                        <h3><a href="/products/productosInd">Pantalones</a></h3>
+                        <h3><a href="/products/productosInd">Mochilas</a></h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
-                            <%if (products[i].productType_id == 5) { %>
+                            <%if (products[i].productType_id == 17) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <img src="/images/products/mochila-1.png" alt=<%= products[i].name %>>
                                 <p><%= products[i].name%></p>
                             </article>
                             <% } %>
                             <% } %>
                         </div>
                     </div>
-        
+
                     <div class="sectionFeatured">
-                        <h3><a href="">Camisas</a></h3>
+                        <h3><a href="">Bolsos</a></h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
-                            <%if (products[i].productType_id == 6) { %>
+                            <%if (products[i].productType_id == 18) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
-                            </article>
-                            <% } %>
-                            <% } %>
-                        </div>
-                    </div>
-              
-                    <div class="sectionFeatured">
-                        <h3><a href="">Abrigos</a></h3>
-                        <div>
-                            <% for(let i = 0; i < products.length; i++) { %>
-                            <%if (products[i].productType_id == 7) { %>
-                            <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <img src="/images/products/mochila-2.png" alt=<%= products[i].name %>>
                                 <p><%= products[i].name%></p>
                             </article>
                             <% } %>

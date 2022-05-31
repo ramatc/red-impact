@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head")%>
+
+<body>
+    <%- include("../partials/header")%>
+
+    <main>
+        <section class="section-products">
+            <ul class="breadcrumb">
+                <li><a href="/" class="link-main">Inicio</a> /&nbsp;</li>
+                <li><a href="/products" class="link-main">Productos</a> /&nbsp;</li>
+                <li><a class="link-main bolder">Equipamiento</a></li>
+            </ul>
+
+            <img src="/images/banner-militar.png" alt="Banner de Productos" class="banner banner-products">
+
+            <%- include("../partials/stickymenu")%>
+
+            <div class="main-content">
+                <%- include("../partials/aside")%>
+
+                <div class="products-list">
+                    <div class="sectionFeatured">
+                        <h3><a href="/products/productosInd">Chalecos</a></h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 11) { %>
+                            <article class="articleProduct">
+                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <p><%= products[i].name%></p>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <div class="sectionFeatured">
+                        <h3><a href="">Escudos</a></h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 12) { %>
+                            <article class="articleProduct">
+                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <p><%= products[i].name%></p>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <div class="sectionFeatured">
+                        <h3><a href="">Linternas</a></h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 13) { %>
+                            <article class="articleProduct">
+                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <p><%= products[i].name%></p>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <div class="sectionFeatured">
+                        <h3><a href="">Carpas</a></h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 14) { %>
+                            <article class="articleProduct">
+                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <p><%= products[i].name%></p>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <div class="sectionFeatured">
+                        <h3><a href="">Catres</a></h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 15) { %>
+                            <article class="articleProduct">
+                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <p><%= products[i].name%></p>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <div class="sectionFeatured">
+                        <h3><a href="">Bolsas de dormir</a></h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 16) { %>
+                            <article class="articleProduct">
+                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                <p><%= products[i].name%></p>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../partials/footer")%>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
