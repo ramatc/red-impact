@@ -14,126 +14,129 @@
             </ul>
 
             <img src="/images/banner-militar.png" alt="Banner de Productos" class="banner banner-products">
-            
+
             <%- include("../partials/stickymenu")%>
 
             <div class="main-content">
                 <%- include("../partials/asideOut")%>
 
                 <div class="products-list">
+                    <!-- CASCOS -->
+                    <div class="sectionFeatured">
+                        <h3><a href="products/productosCascos">Cascos</a></h3>
+                        <div>
+                            <% for(let i = 0; i < 27; i++) { %>
+                            <%if (products[i].category_id == 1) { %>
+                            <article class="articleProduct">
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/accesorios-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
+                            </article>
+                            <% } %>
+                            <% } %>
+                            <img src="/images/more.png" alt="Ver más productos" class="moreProducts">
+                        </div>
+                    </div>
                     <!-- INDUMENTARIA -->
                     <div class="sectionFeatured">
                         <h3><a href="products/productosInd">Indumentaria</a></h3>
                         <div>
+                            <% for(let i = 0; i < 3; i++) { %>
+                            <%if (products[i].category_id == 2) { %>
                             <article class="articleProduct">
-                                <a href="products/1">
-                                    <img src="/images/products/indumentaria-1.png" alt="Foto de producto">
-                                    <p>Indumentaria verde</p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
                                 </a>
                             </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/indumentaria-2.png" alt="">
-                                <p>Indumentaria fluo</p>
-                            </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/indumentaria-3.png" alt="">
-                                <p>Indumentaria gris</p>
-                            </article>
+                            <% } %>
+                            <% } %>
                             <img src="/images/more.png" alt="Ver más productos" class="moreProducts">
                         </div>
                     </div>
                     <!-- CALZADO -->
                     <div class="sectionFeatured">
-                        <h3><a href="">Calzado</a></h3>
+                        <h3><a href="products/productosCalzado">Calzado</a></h3>
                         <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].category_id == 3) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/calzado-1.png" alt="Foto de producto">
-                                <p>Borceguies negras</p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/calzado-2.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/calzado-2.png" alt="">
-                                <p>Botas marrones</p>
-                            </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/calzado-2.png" alt="">
-                                <p>Botas marrones</p>
-                            </article>
+                            <% } %>
+                            <% } %>
                             <img src="/images/more.png" alt="Ver más productos" class="moreProducts">
                         </div>
                     </div>
-                    <!-- ACCESORIOS -->
+                    <!-- EQUIPAMIENTO -->
                     <div class="sectionFeatured">
-                        <h3><a href="">Accesorios</a></h3>
+                        <h3><a href="products/productosEquipamiento">Equipamiento</a></h3>
                         <div>
+                            <% for(let i = 0; i < 11; i++) { %>
+                            <%if (products[i].category_id == 4) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/accesorios-1.png" alt="Foto de producto">
-                                <p>Cinturon marron</p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/accesorios-3.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/accesorios-2.png" alt="">
-                                <p>Guantes negros</p>
-                            </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/accesorios-3.png" alt="">
-                                <p>Chaleco militar</p>
-                            </article>
+                            <% } %>
+                            <% } %>
                             <img src="/images/more.png" alt="Ver más productos" class="moreProducts">
                         </div>
                     </div>
                     <!-- BOLSOS Y MOCHILAS -->
                     <div class="sectionFeatured">
-                        <h3><a href="">Bolsos y mochilas</a></h3>
+                        <h3><a href="products/productosByM">Bolsos y mochilas</a></h3>
                         <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].category_id == 5) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/mochila-1.png" alt="Foto de producto">
-                                <p>Mochila militar verde</p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/mochila-2.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/mochila-2.png" alt="">
-                                <p>Mochila militar negra</p>
-                            </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/mochila-3.png" alt="">
-                                <p>Mochila militar beige</p>
-                            </article>
+                            <% } %>
+                            <% } %>
                             <img src="/images/more.png" alt="Ver más productos" class="moreProducts">
                         </div>
                     </div>
                     <!-- UNIFORMES -->
                     <div class="sectionFeatured">
-                        <h3><a href="">Uniformes</a></h3>
+                        <h3><a href="products/productosUniformes">Uniformes</a></h3>
                         <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].category_id == 7) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/uniforme-1.png" alt="Foto de producto">
-                                <p>Uniforme negro</p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/accesorios-2.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/uniforme-2.png" alt="">
-                                <p>Uniforme militar camuflado</p>
-                            </article>
-                            <article class="articleProduct">
-                                <img src="/images/products/uniforme-3.png" alt="">
-                                <p>Uniforme gris</p>
-                            </article>
+                            <% } %>
+                            <% } %>
                             <img src="/images/more.png" alt="Ver más productos" class="moreProducts">
                         </div>
                     </div>
-                    <!-- ATRIBUTOS MILITARES -->
+                    <!-- ACCESORIOS -->
                     <div class="sectionFeatured">
-                        <h3><a href="">Atributos militares</a></h3>
+                        <h3><a href="products/productosAccesorios">Accesorios</a></h3>
                         <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].category_id == 6) { %>
                             <article class="articleProduct">
-                                <img src="/images/category-1.png" alt="Foto de producto">
-                                <p>Casco militar</p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/accesorios-2.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
-                            <article class="articleProduct">
-                                <img src="/images/category-2.png" alt="">
-                                <p>Camisa militar</p>
-                            </article>
-                            <article class="articleProduct">
-                                <img src="/images/category-3.png" alt="">
-                                <p>Mochila militar</p>
-                            </article>
+                            <% } %>
+                            <% } %>
                             <img src="/images/more.png" alt="Ver más productos" class="moreProducts">
                         </div>
                     </div>

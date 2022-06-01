@@ -23,13 +23,15 @@
 
                 <div class="products-list">
                     <div class="sectionFeatured">
-                        <h3><a href="/products/productosInd">Uniformes policiales</a></h3>
+                        <h3>Uniformes policiales</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 19) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>
@@ -37,27 +39,15 @@
                     </div>
 
                     <div class="sectionFeatured">
-                        <h3><a href="">GNA</a></h3>
+                        <h3>GNA</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 20) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/uniforme-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
-                            </article>
-                            <% } %>
-                            <% } %>
-                        </div>
-                    </div>
-          
-                    <div class="sectionFeatured">
-                        <h3><a href="">PNA</a></h3>
-                        <div>
-                            <% for(let i = 0; i < products.length; i++) { %>
-                            <%if (products[i].productType_id == 21) { %>
-                            <article class="articleProduct">
-                                <img src="/images/products/uniforme-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/uniforme-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>
@@ -65,13 +55,31 @@
                     </div>
 
                     <div class="sectionFeatured">
-                        <h3><a href="">SPF</a></h3>
+                        <h3>PNA</h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 21) { %>
+                            <article class="articleProduct">
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/uniforme-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <div class="sectionFeatured">
+                        <h3>SPF</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 22) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/uniforme-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/uniforme-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>

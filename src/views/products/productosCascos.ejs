@@ -23,13 +23,15 @@
 
                 <div class="products-list">
                     <div class="sectionFeatured">
-                        <h3><a href="/products/productosInd">Mich 2000</a></h3>
+                        <h3>Mich 2000</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 1) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>
@@ -37,13 +39,15 @@
                     </div>
 
                     <div class="sectionFeatured">
-                        <h3><a href="">Antidisturbios</a></h3>
+                        <h3>Antidisturbios</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 2) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>
@@ -51,13 +55,15 @@
                     </div>
 
                     <div class="sectionFeatured">
-                        <h3><a href="">Antibalas</a></h3>
+                        <h3>Antibalas</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 3) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>
@@ -65,13 +71,15 @@
                     </div>
 
                     <div class="sectionFeatured">
-                        <h3><a href="">Fast BJ</a></h3>
+                        <h3>Fast BJ</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 4) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>

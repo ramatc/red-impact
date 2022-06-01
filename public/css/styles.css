@@ -987,7 +987,7 @@ aside h3 a{
     .none {
         display: block;
     }
-    .hamburguer-button,
+    #openNav .hamburguer-button,
     .mySidenav {
         display: none;
     }
@@ -1200,9 +1200,9 @@ aside h3 a{
         font-size: 16px;
     }
     .price-product{
-        font-size: 36px;
+        font-size: 32px;
     }
     .description-product{
-        font-size: 18px;
+        font-size: 22px;
     }
 }

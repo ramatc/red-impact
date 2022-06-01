@@ -23,13 +23,15 @@
 
                 <div class="products-list">
                     <div class="sectionFeatured">
-                        <h3><a href="/products/productosInd">Rodilleras</a></h3>
+                        <h3>Rodilleras</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 23) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/accesorios-2.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/accesorios-2.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>
@@ -37,13 +39,15 @@
                     </div>
 
                     <div class="sectionFeatured">
-                        <h3><a href="">Guantes</a></h3>
+                        <h3>Guantes</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 24) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/accesorios-2.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/accesorios-2.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>
@@ -51,13 +55,15 @@
                     </div>
 
                     <div class="sectionFeatured">
-                        <h3><a href="">Cinturones</a></h3>
+                        <h3>Cinturones</h3>
                         <div>
                             <% for(let i = 0; i < products.length; i++) { %>
                             <%if (products[i].productType_id == 25) { %>
                             <article class="articleProduct">
-                                <img src="/images/products/accesorios-3.png" alt=<%= products[i].name %>>
-                                <p><%= products[i].name%></p>
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/accesorios-2.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
                             </article>
                             <% } %>
                             <% } %>

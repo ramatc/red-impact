@@ -1,9 +1,13 @@
 const db = require("../database/models");
 const Products = db.Product;
+const Categories = db.Category;
 
 const productsController = {
-    list: (req, res) =>{
-		res.render('./products/productos', {titulo: "Red Impact - Productos"});
+    list: async (req, res) =>{
+        Products.findAll()
+        .then(response => {
+            res.render('./products/productos', {titulo: "Red Impact - Productos", products:response});
+        })
 	},
 
     productosCascos: (req, res) =>{
@@ -55,8 +59,10 @@ const productsController = {
         })
     },
 
-    detail: (req, res) =>{
-        res.render('./products/productDetail', {titulo: "Red Impact - Producto número 1"});
+    detail: async (req, res) =>{
+        const categories = await Categories.findAll();
+        let Product = await Products.findByPk(req.params.id);
+        res.render('./products/productDetail', {titulo: `Red Impact - ${Product.name}`, product: Product, categories});
     }
 }  
 
