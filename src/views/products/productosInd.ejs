@@ -29,7 +29,7 @@
                             <%if (products[i].productType_id == 5) { %>
                             <article class="articleProduct">
                                 <a href="/products/<%= products[i].id%>">
-                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <img src="/images/products/<%= products[i].image%>.png" alt=<%= products[i].name %>>
                                     <p><%= products[i].name%></p>
                                 </a>
                             </article>
@@ -45,7 +45,7 @@
                             <%if (products[i].productType_id == 6) { %>
                             <article class="articleProduct">
                                 <a href="/products/<%= products[i].id%>">
-                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <img src="/images/products/<%= products[i].image%>.png" alt=<%= products[i].name %>>
                                     <p><%= products[i].name%></p>
                                 </a>
                             </article>
@@ -61,7 +61,23 @@
                             <%if (products[i].productType_id == 7) { %>
                             <article class="articleProduct">
                                 <a href="/products/<%= products[i].id%>">
-                                    <img src="/images/products/indumentaria-1.png" alt=<%= products[i].name %>>
+                                    <img src="/images/products/<%= products[i].image%>.png" alt=<%= products[i].name %>>
+                                    <p><%= products[i].name%></p>
+                                </a>
+                            </article>
+                            <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <div class="sectionFeatured">
+                        <h3 id="Gorros">Gorros</h3>
+                        <div>
+                            <% for(let i = 0; i < products.length; i++) { %>
+                            <%if (products[i].productType_id == 27) { %>
+                            <article class="articleProduct">
+                                <a href="/products/<%= products[i].id%>">
+                                    <img src="/images/products/<%= products[i].image%>.png" alt=<%= products[i].name %>>
                                     <p><%= products[i].name%></p>
                                 </a>
                             </article>

@@ -7,6 +7,7 @@
 html,
 body {
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -683,6 +684,8 @@ p.font-size {
 .img-product{
     width: 100%;
     margin-top: 20px;
+    border: 0.9px solid #d3cccc;
+    border-radius: 10px;
 }
 
 .title-product{
